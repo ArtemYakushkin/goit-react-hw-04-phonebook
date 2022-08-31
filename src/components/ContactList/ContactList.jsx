@@ -9,7 +9,7 @@ const ContactList = ({ contacts, del}) => {
                 {contacts.map(({ id, name, number }) => (
                     <ContactListItem key={id}
                         contact={[id, name, number]}
-                        deleteContact={() => del(id)}
+                        deleteContact={del}
                     />
                 ))}
             </ListContacts>
